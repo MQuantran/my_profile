@@ -1,93 +1,284 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Line Following Robot</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helium Recovery System | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+      <header class="header">
+  <div class="header-left">
+    <span class="logo">Minh Quan</span>
+    <nav class="top-nav">
+      <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+      <a href="#">Resume</a>
+    </nav>
+  </div>
+  <div class="header-right">
+    <button id="dark-mode-toggle" class="toggle-btn">
+      <span class="mode-text">Dark Mode</span>
+    </button>
+  </div>
+</header>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Sections</h2>
+      <nav class="nav-links">
+        <a href="index.html">Introduction</a>
+        <a href="index.html#about">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills & Tools</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+      </nav>
+    </aside>
 
-<!-- NAVBAR -->
-<nav>
-    <a href="index.html">← Back</a>
-</nav>
+    <!-- Main content -->
+    <main class="main-content">
+      <section id="helium-recovery">
+        <h1>Helium Recovery System</h1>
+        <p>Design of a cryogenic helium capture, compression, and purification system</p>
 
-<!-- HERO -->
-<section class="hero">
-    <h1>Line Following Robot</h1>
-    <p>Closed-loop controlled mobile robot for real-time path tracking</p>
-</section>
+        <!-- Overview -->
+        <div class="card">
+          <div class="card-header">
+            <h2>Overview</h2>
+          </div>
+          <p class="description">
+            Designed a helium recovery system for the University of Melbourne Thermodynamics Laboratory 
+            to reduce helium loss, operational cost, and environmental impact. The system captures, compresses, 
+            and purifies helium to 99.999% (5N) for reuse in cryogenic experiments.
+          </p>
+        </div>
 
-<!-- OVERVIEW -->
-<section class="card">
-    <h2>Overview</h2>
-    <p>
-        Developed a mobile robot capable of autonomously following a predefined path using 
-        real-time sensor feedback and PID-based control. The system demonstrates stable 
-        tracking performance under varying operating conditions.
-    </p>
-</section>
+        <!-- Problem -->
+        <div class="card">
+          <div class="card-header">
+            <h2>Problem</h2>
+          </div>
+          <p class="description">
+            Helium is a finite and non-renewable resource with increasing global cost due to supply chain disruptions. 
+            The laboratory currently vents all used helium, resulting in significant financial loss and inefficiency.
+          </p>
+          <ul>
+            <li>Annual liquid helium cost: ~$32,000</li>
+            <li>Gas consumption: ~13.9 m³/year</li>
+            <li>No existing recovery infrastructure</li>
+          </ul>
+        </div>
 
-<!-- PROBLEM -->
-<section class="card">
-    <h2>Problem</h2>
-    <p>
-        Achieving reliable line tracking is challenging due to changing lighting conditions, 
-        sensor noise, and varying path curvature. The system must maintain stability while 
-        responding quickly to deviations.
-    </p>
-</section>
+        <!-- Design Objectives -->
+        <div class="card">
+          <div class="card-header">
+            <h2>Design Objectives</h2>
+          </div>
+          <ul class="description">
+            <li>Recover up to 20 m³ of helium per day</li>
+            <li>Purify helium from 95% → 99.999% (5N)</li>
+            <li>Ensure cost recovery within 5 years</li>
+            <li>Maintain reliable and scalable operation</li>
+          </ul>
+        </div>
 
-<!-- CONTRIBUTION -->
-<section class="card">
-    <h2>My Contribution</h2>
-    <ul>
-        <li>Developed real-time control logic for path tracking</li>
-        <li>Implemented PID controller for steering correction</li>
-        <li>Processed sensor data to compute lateral deviation</li>
-        <li>Tuned controller to minimize oscillation and overshoot</li>
-    </ul>
-</section>
+        <!-- Engineering Approach -->
+        <div class="card">
+          <div class="card-header">
+            <h2>Engineering Approach</h2>
+          </div>
+          <p class="description">
+            Three primary methods exist for purifying helium: cryogenic distillation, cryogenic adsorption, and membrane separation. Cryogenic distillation, the most common method for extracting helium from natural gas, is typically used for purification from near-zero concentrations. Consequently, it is unsuitable for our laboratory's helium stream, and the system is more costly to construct and operate compared to alternative approaches. Membrane separation offers the lowest cost and simplest operation; however, it can only achieve approximately 95% purity, while our quality requirement is 99.999% [<a href="#ref-4">4</a>].<br><br>
+            The last method is pressure swing adsorption (PSA), which applies the adsorption of nitrogen at high pressure and cryogenic temperatures to purify helium. This method is appropriate for helium streams with relatively high initial purity, as the adsorption capacity is dependent on the impurity concentration. The adsorber reaches a saturation point, beyond which it can no longer adsorb impurities and requires regeneration. Adsorption techniques are currently employed in numerous laboratories worldwide, with the Institute for Technical Physics (ITEP) [<a href="#ref-5">5</a>] serving as a notable example, demonstrating the feasibility of this method within our laboratory's budgetary constraint.<br><br>
+            According to A. Saberimoghaddam [<a href="#ref-6">6</a>], nitrogen adsorption on carbon occurs with highest purity at 77K and 60 bar. Their research demonstrated promising results, achieving 7N (99.99999%) purity under these temperature and pressure conditions, thereby satisfying our purity requirement.
+          </p>
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th>Cryogenic distillation</th>
+                <th>Membrane</th>
+                <th>Pressure swing adsorption (PSA)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Intake purity</td>
+                <td>0.03%</td>
+                <td>0.03%</td>
+                <td>&gt;90%</td>
+              </tr>
+              <tr>
+                <td>Output purity</td>
+                <td>&gt;5N (99.999%)</td>
+                <td>95%</td>
+                <td>&gt;5N (99.999%)</td>
+              </tr>
+              <tr>
+                <td>Complexity</td>
+                <td>High</td>
+                <td>Low</td>
+                <td>Low</td>
+              </tr>
+              <tr>
+                <td>Efficiency (how much helium recover)</td>
+                <td>98%</td>
+                <td>75%</td>
+                <td>98%</td>
+              </tr>
+              <tr>
+                <td>Fixed cost</td>
+                <td>High (&gt;$100k)</td>
+                <td>Medium (&gt;$10k)</td>
+                <td>Medium(&gt;$10k)</td>
+              </tr>
+              <tr>
+                <td>Feasibility</td>
+                <td>Low</td>
+                <td>High</td>
+                <td>High</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="description">Table 1: Comparison between 3 recovery methods</p>
+        </div>
 
-<!-- SYSTEM DESIGN -->
-<section class="card">
-    <h2>System Design</h2>
-    <ul>
-        <li><strong>Microcontroller:</strong> Arduino / Raspberry Pi</li>
-        <li><strong>Sensors:</strong> Infrared (IR) array</li>
-        <li><strong>Actuation:</strong> Differential drive motors</li>
-    </ul>
-</section>
+        <!-- System Design -->
+        <div class="card">
+          <div class="card-header">
+            <h2>System Design</h2>
+          </div>
+          <ul class="description">
+            <li><strong>Gas Bag:</strong> Stores ~22 m³ helium per experiment</li>
+            <li><strong>Compressor:</strong> 60 bar helium compression (Minnuo)</li>
+            <li><strong>Filter:</strong> Oil & water removal to protect adsorber</li>
+            <li><strong>Purifier:</strong> PSA-based nitrogen removal at 77K</li>
+          </ul>
+          <div class="image-container">
+            <img src="images/proposed_helium_recovery_system.png" alt="Proposed Helium Recovery System Diagram" style="width: 100%; height: auto; border-radius: 0.5rem; margin-top: 1rem;">
+          </div>
+        </div>
 
-<!-- CONTROL -->
-<section class="card">
-    <h2>Control Strategy</h2>
-    <p>
-        A PID controller adjusts motor speeds based on lateral error from the line. 
-        Proportional control corrects immediate deviation, integral reduces steady-state error, 
-        and derivative improves stability by damping oscillations.
-    </p>
-</section>
+        <!-- Adsorber Design -->
+        <div class="card">
+          <div class="card-header">
+            <h2>Adsorber Design</h2>
+          </div>
+          <p class="description">
+            Designed a cryogenic adsorption system using activated carbon to remove nitrogen impurities.
+          </p>
+          <ul class="description">
+            <li>Activated carbon required: ~7 kg</li>
+            <li>Operating temperature: 77K (liquid nitrogen cooled)</li>
+            <li>Helical coil design for compactness</li>
+            <li>Pressure drop: ~57 Pa (negligible vs 60 bar)</li>
+          </ul>
 
-<!-- RESULTS -->
-<section class="card">
-    <h2>Results</h2>
-    <ul>
-        <li>Stable tracking on straight and curved paths</li>
-        <li>Reduced oscillations after tuning</li>
-        <li>Improved response to sharp turns</li>
-    </ul>
-</section>
+          <!-- General Adsorber Design -->
+          <div class="image-section">
+            <h3>General Adsorber Design</h3>
+            <p class="description">Overview of the complete cryogenic adsorption system showing the helical coil arrangement and cooling mechanism.</p>
+            <div class="image-container">
+              <img src="images/adsorber_design.png" alt="General Adsorber Design Diagram" style="max-width: 400px; height: auto; border-radius: 0.5rem; margin: 1rem auto; display: block;">
+            </div>
+          </div>
 
-<!-- IMPROVEMENTS -->
-<section class="card">
-    <h2>Future Improvements</h2>
-    <ul>
-        <li>Adaptive control for changing lighting conditions</li>
-        <li>Sensor fusion for improved robustness</li>
-        <li>Higher-speed tracking with predictive control</li>
-    </ul>
-</section>
-<script src="script.js"></script>
+          <!-- Adsorber Cover Design -->
+          <div class="image-section">
+            <h3>Adsorber Cover Design</h3>
+            <p class="description">Detailed design of the adsorber cover showing sealing mechanisms and connection points for helium inlet/outlet.</p>
+            <div class="image-container">
+              <img src="images/adsorber_cover_design.png" alt="Adsorber Cover Design Diagram" style="max-width: 400px; height: auto; border-radius: 0.5rem; margin: 1rem auto; display: block;">
+            </div>
+          </div>
+
+          <!-- Wire Mesh Filter -->
+          <div class="image-section">
+            <h3>Wire Mesh Filter Design</h3>
+            <p class="description">Close-up view of the wire mesh filter used to contain activated carbon particles while allowing helium flow through the system.</p>
+            <div class="image-container">
+              <img src="images\wired_mesh filter.png" alt="Wire Mesh Filter Diagram" style="max-width: 400px; height: auto; border-radius: 0.5rem; margin: 1rem auto; display: block;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Performance & Operation -->
+        <div class="card">
+          <div class="card-header">
+            <h2>Performance & Operation</h2>
+          </div>
+          <ul class="description">
+            <li>Recovery capacity: ~10 Nm³/hr</li>
+            <li>Adsorber saturation time: ~97 minutes</li>
+            <li>Regeneration required between cycles</li>
+            <li>Liquid nitrogen usage: ~46.8 L/hr</li>
+          </ul>
+        </div>
+
+        <!-- Economic Analysis -->
+        <div class="card">
+          <div class="card-header">
+            <h2>Economic Analysis</h2>
+          </div>
+          <ul class="description">
+            <li>Total system cost: ~$27,000 AUD</li>
+            <li>Market alternatives: ~$200,000 AUD</li>
+            <li>Operating cost: ~$46.8/hr</li>
+            <li>Helium recovery value: ~$777.9/hr</li>
+          </ul>
+          <p class="description">
+            <strong>Payback period: ~37 hours of operation</strong>
+          </p>
+        </div>
+
+        <!-- Impact -->
+        <div class="card">
+          <div class="card-header">
+            <h2>Impact</h2>
+          </div>
+          <p class="description">
+            This system significantly reduces helium waste while lowering operational costs. 
+            It also supports sustainable laboratory practices and provides a scalable foundation 
+            for future noble gas recovery systems.
+          </p>
+        </div>
+
+        <!-- What I Learned -->
+        <div class="card">
+          <div class="card-header">
+            <h2>What I Learned</h2>
+          </div>
+          <ul class="description">
+            <li>System-level engineering design under real constraints</li>
+            <li>Trade-offs between cost, efficiency, and feasibility</li>
+            <li>Integration of thermodynamics, fluid mechanics, and process design</li>
+          </ul>
+        </div>
+
+        <!-- References -->
+        <div class="card">
+          <div class="card-header">
+            <h2>References</h2>
+          </div>
+          <ol class="description">
+            <li id="ref-1">National Academies of Sciences, Engineering, and Medicine. (2000). Helium supply, present and future. In "The impact of selling the Federal Helium Reserve" (pp. 40). National Academies Press. <a href="https://doi.org/10.17226/9860" target="_blank">https://doi.org/10.17226/9860</a></li>
+            <li id="ref-2">Mullins, W. (2023, September). Helium prices surge to record levels as shortage continues. "Physics Today", 76(9), 18. <a href="https://pubs.aip.org/physicstoday/article/76/9/18/2908156/Helium-prices-surge-to-record-levels-as-shortage" target="_blank">https://pubs.aip.org/physicstoday/article/76/9/18/2908156/Helium-prices-surge-to-record-levels-as-shortage</a></li>
+            <li id="ref-3">Melbourne Energy Institute. (2024, July 23). Safe and efficient hydrogen liquefication and plant design. The University of Melbourne. <a href="https://energy.unimelb.edu.au/about-us/news/news-archive/safe-and-efficient-hydrogen-liquefication-and-plant-design" target="_blank">https://energy.unimelb.edu.au/about-us/news/news-archive/safe-and-efficient-hydrogen-liquefication-and-plant-design</a></li>
+            <li id="ref-4">Quader, M. A., Rufford, T. E., & Smart, S. (2020). Modeling and cost analysis of helium recovery using combined-membrane process configurations. Separation and Purification Technology, 236, 116269. <a href="https://doi.org/10.1016/j.seppur.2019.116269" target="_blank">https://doi.org/10.1016/j.seppur.2019.116269</a></li>
+            <li id="ref-5">Institute for Technical Physics. (n.d.). Helium purifier. Karlsruhe Institute of Technology. <a href="https://www.itep.kit.edu/english/helium_purifier.php" target="_blank">https://www.itep.kit.edu/english/helium_purifier.php</a></li>
+            <li id="ref-6">Saberimoghaddam, A., & Khebri, V. (2018). Design and construction of a helium purification system using cryogenic adsorption process. Iranian Journal of Chemical Engineering, 15(1), 89-101. <a href="https://www.ijche.com/article_63150_16a36a76860ad629abbad361df41a8db.pdf" target="_blank">https://www.ijche.com/article_63150_16a36a76860ad629abbad361df41a8db.pdf</a></li>
+            <li id="ref-7">CMR Direct. (n.d.). Dewar OD50-359. Retrieved March 2, 2025, from <a href="https://www.cmr-direct.com/shop/02-24-029-dew-od50-359" target="_blank">https://www.cmr-direct.com/shop/02-24-029-dew-od50-359</a></li>
+            <li id="ref-8">Total Tools. (n.d.). SpeedGas welding gas exchange argon G size. Total Tools. Retrieved March 2, 2025, from <a href="https://www.totaltools.com.au/121020-speedgas-welding-gas-exchange-argon-g-size-argrp" target="_blank">https://www.totaltools.com.au/121020-speedgas-welding-gas-exchange-argon-g-size-argrp</a></li>
+            <li id="ref-9">Barron, R. F. (1985). Cryogenic systems. Oxford University Press.</li>
+            <li id="ref-10">Clark, J., Thorogood, R. and Haselden, G., Cryogenic fundamentals, Academic Press, London, (1971)</li>
+            <li id="ref-11">Bhushan, J. (2011). Helium purification by gas adsorption method (Master's thesis). National Institute of Technology Rourkela.</li>
+          </ol>
+        </div>
+
+      </section>
+      <a href="projects.html" class="cta-button">&lt; Projects</a>
+    </main>
+  </div>
+    <script src="script.js"></script>
 </body>
 </html>

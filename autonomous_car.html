@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autonomous Vehicle Navigation | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <span class="logo">Minh Quan</span>
+      <nav class="top-nav">
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+        <a href="#">Resume</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <button id="dark-mode-toggle" class="toggle-btn">
+        <span class="mode-text">Dark Mode</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Sections</h2>
+      <nav class="nav-links">
+        <a href="index.html">Introduction</a>
+        <a href="index.html#about">About Me</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills & Tools</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section id="project-header">
+        <h1>Autonomous Vehicle Navigation System</h1>
+        <p class="subtitle">Control system for lane keeping, cruise control, and obstacle detection</p>
+      </section>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Project Overview</h2>
+        </div>
+        <p class="description">
+          Developed a modular control system for an autonomous vehicle to navigate closed circuits. 
+          The architecture integrated classical PID control with Reinforcement Learning (RL) to enhance performance in complex, noisy environments.
+        </p>
+        <div class="short-video-container">
+          <div class="short-video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/aE3atXdA6-c" 
+              title="Autonomous Car Demo" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Impact</h2>
+        </div>
+        <p class="description">
+          The system demonstrated a successful sim-to-real transition, overcoming challenges such as sensor noise and non-linear vehicle dynamics.
+        </p>
+        <ul>
+          <li><strong>Robust Navigation:</strong> Consistently completed laps on a closed circuit without lane departures.</li>
+          <li><strong>Efficiency:</strong> Residual RL integration optimized control parameters without exhaustive manual tuning.</li>
+          <li><strong>Reliability:</strong> Integrated obstacle detection allowed for safe emergency stops during high-speed testing.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>System Integration & FSM</h2>
+        </div>
+        <p class="description">
+          To incorporate every sub-system effort, I implemented a Finite State Machine (FSM) that prioritized safety and mission objectives.
+        </p>
+        <ul>
+          <li><strong>Detection State:</strong> Constantly monitors cone positions and obstacle distance using the integrated vision pipeline.</li>
+          <li><strong>Navigation State:</strong> Executes lane-keeping and cruise control policies when the path is clear.</li>
+          <li><strong>Evasive Maneuver State:</strong> Triggered by the object detection module to override standard navigation for collision avoidance.</li>
+          <li><strong>Emergency Stop:</strong> A fail-safe state that engages maximum braking if an obstacle is unavoidable.</li>
+        </ul>
+        <img src="images/FSM_diagram.png" alt="FSM Diagram" class="project-img">
+        <p class="img-caption">Figure 1: FSM diagram</p>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Core Engineering Modules</h2>
+        </div>
+        
+        <h3>Lane Keeping & Curve Handling</h3>
+        <p>Designed a steering policy using a baseline PID controller to follow road centerlines estimated from cone positions.</p>
+        <img src="images/fig-1.png" alt="Robot in Environment" class="project-img">
+        <p class="img-caption">Figure 2: Representation of the Robot in its environment</p>
+
+        <h3>Cruise Control</h3>
+        <p>Developed an ESC control policy that maintains target velocity while dynamically slowing down during sharp curves to maintain traction.</p>
+
+        <h3>Object Detection</h3>
+        <p>Implemented systems to identify track obstacles and execute reactive maneuvers or emergency stops to prevent collisions.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>What I Learned</h2>
+        </div>
+        <p class="description">
+          This project provided deep insights into the practical challenges of robotic control systems:
+        </p>
+        <ul>
+          <li><strong>Hardware Constraints:</strong> Addressed how battery voltage drops affect integral control and speed consistency.</li>
+          <li><strong>Hybrid Architectures:</strong> Gained experience combining traditional PID stability with adaptive Reinforcement Learning.</li>
+          <li><strong>System Integration:</strong> Learned how to harmonize individual modules into a reliable, state-driven autonomous system.</li>
+        </ul>
+      </div>
+      <a href="projects.html" class="cta-button">&lt; Projects</a>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
