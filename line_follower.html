@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Line Following Robot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="index.html">← Back</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Line Following Robot</h1>
+    <p>Closed-loop controlled mobile robot for real-time path tracking</p>
+</section>
+
+<!-- OVERVIEW -->
+<section class="card">
+    <h2>Overview</h2>
+    <p>
+        Developed a mobile robot capable of autonomously following a predefined path using 
+        real-time sensor feedback and PID-based control. The system demonstrates stable 
+        tracking performance under varying operating conditions.
+    </p>
+</section>
+
+<!-- PROBLEM -->
+<section class="card">
+    <h2>Problem</h2>
+    <p>
+        Achieving reliable line tracking is challenging due to changing lighting conditions, 
+        sensor noise, and varying path curvature. The system must maintain stability while 
+        responding quickly to deviations.
+    </p>
+</section>
+
+<!-- CONTRIBUTION -->
+<section class="card">
+    <h2>My Contribution</h2>
+    <ul>
+        <li>Developed real-time control logic for path tracking</li>
+        <li>Implemented PID controller for steering correction</li>
+        <li>Processed sensor data to compute lateral deviation</li>
+        <li>Tuned controller to minimize oscillation and overshoot</li>
+    </ul>
+</section>
+
+<!-- SYSTEM DESIGN -->
+<section class="card">
+    <h2>System Design</h2>
+    <ul>
+        <li><strong>Microcontroller:</strong> Arduino / Raspberry Pi</li>
+        <li><strong>Sensors:</strong> Infrared (IR) array</li>
+        <li><strong>Actuation:</strong> Differential drive motors</li>
+    </ul>
+</section>
+
+<!-- CONTROL -->
+<section class="card">
+    <h2>Control Strategy</h2>
+    <p>
+        A PID controller adjusts motor speeds based on lateral error from the line. 
+        Proportional control corrects immediate deviation, integral reduces steady-state error, 
+        and derivative improves stability by damping oscillations.
+    </p>
+</section>
+
+<!-- RESULTS -->
+<section class="card">
+    <h2>Results</h2>
+    <ul>
+        <li>Stable tracking on straight and curved paths</li>
+        <li>Reduced oscillations after tuning</li>
+        <li>Improved response to sharp turns</li>
+    </ul>
+</section>
+
+<!-- IMPROVEMENTS -->
+<section class="card">
+    <h2>Future Improvements</h2>
+    <ul>
+        <li>Adaptive control for changing lighting conditions</li>
+        <li>Sensor fusion for improved robustness</li>
+        <li>Higher-speed tracking with predictive control</li>
+    </ul>
+</section>
+
+</body>
+</html>

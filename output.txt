@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!--PWjoYAXu8g8doPwdXmDxv-->
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link as="font" crossorigin="" href="/_next/static/media/4cf2300e9c8272f7-s.p.woff2" rel="preload" type="font/woff2"/>
+  <link as="font" crossorigin="" href="/_next/static/media/93f479601ee12b01-s.p.woff2" rel="preload" type="font/woff2"/>
+  <link data-precedence="next" href="/_next/static/css/d5ffb3a6e1b87a68.css" rel="stylesheet"/>
+  <link as="script" fetchpriority="low" href="/_next/static/chunks/webpack-69a2bdad1afb6772.js" rel="preload"/>
+  <script async="" src="/_next/static/chunks/4bd1b696-409494caf8c83275.js">
+  </script>
+  <script async="" src="/_next/static/chunks/255-dc5f45a243dc3a80.js">
+  </script>
+  <script async="" src="/_next/static/chunks/main-app-f810cc9959894cd9.js">
+  </script>
+  <script async="" src="/_next/static/chunks/ee560e2c-ca3f1191368ea17e.js">
+  </script>
+  <script async="" src="/_next/static/chunks/619-f072ac750404f9da.js">
+  </script>
+  <script async="" src="/_next/static/chunks/900-f40c24c2fbbdab7f.js">
+  </script>
+  <script async="" src="/_next/static/chunks/241-08d191a76bbfc83a.js">
+  </script>
+  <script async="" src="/_next/static/chunks/103-146618c684a97b71.js">
+  </script>
+  <script async="" src="/_next/static/chunks/app/layout-02e222bf6c26832c.js">
+  </script>
+  <script async="" src="/_next/static/chunks/app/page-081fd04277ce1343.js">
+  </script>
+  <link as="script" href="https://www.googletagmanager.com/gtag/js?id=G-QREG3L1ZJF" rel="preload"/>
+  <meta content="" name="next-size-adjust"/>
+  <meta content="#ffffff" name="theme-color"/>
+  <title>
+   aadi.is-dev
+  </title>
+  <meta content="Portfolio of Aditya Domle, Full-Stack Web Developer &amp; DevOps enthusiast." name="description"/>
+  <link href="https://imaditya.vercel.app" rel="author"/>
+  <meta content="Aditya Domle" name="author"/>
+  <meta content="Aditya Domle,aditya domle,aditya.com,Aditya Domle Portfolio,Full Stack Developer,Web Developer,DevOps Engineer,Next.js Developer,React Developer,Node.js Developer,Aditya Domle Projects,Aditya Domle Skills,Aditya Domle Experience,Aditya Domle Education,Aditya Domle Contact,Aditya Domle Resume" name="keywords"/>
+  <meta content="Aditya Domle" name="creator"/>
+  <meta content="aadi.is-dev" property="og:title"/>
+  <meta content="Portfolio of Aditya Domle, Full-Stack Web Developer &amp; DevOps enthusiast." property="og:description"/>
+  <meta content="https://aadi.is-a.dev" property="og:url"/>
+  <meta content="aadi.is-dev" property="og:site_name"/>
+  <meta content="en_US" property="og:locale"/>
+  <meta content="website" property="og:type"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@env_aditya" name="twitter:creator"/>
+  <meta content="aadi.is-dev" name="twitter:title"/>
+  <meta content="Portfolio of Aditya Domle, Full-Stack Web Developer &amp; DevOps enthusiast." name="twitter:description"/>
+  <link href="/favicon-16x16.png" rel="shortcut icon"/>
+  <link href="/favicon.ico" rel="icon"/>
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+  <script>
+   try {
+                if (localStorage.theme === 'dark' || ((!('theme' in localStorage) || localStorage.theme === 'system') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                  document.querySelector('meta[name="theme-color"]').setAttribute('content', '#09090b')
+                }
+              } catch (_) {}
+  </script>
+  <script nomodule="" src="/_next/static/chunks/polyfills-42372ed130431b0a.js">
+  </script>
+ </head>
+ <body class="min-h-svh bg-background font-sans antialiased __variable_188709 __variable_9a8899">
+  <div hidden="">
+   <!--$-->
+   <!--/$-->
+  </div>
+  <script>
+   ((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=["light","dark"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c="class"===a,d=c&&f?e.map(a=>f[a]||a):e;c?(i.classList.remove(...d),i.classList.add(f&&f[b]?f[b]:b)):i.setAttribute(a,b)}),c=b,h&&j.includes(c)&&(i.style.colorScheme=c)}if(d)k(d);else try{let a=localStorage.getItem(b)||c,d=g&&"system"===a?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":a;k(d)}catch(a){}})("class","theme","system",null,["light","dark"],null,true,true)
+  </script>
+  <div vaul-drawer-wrapper="">
+   <div class="relative flex flex-col min-h-svh bg-background">
+    <div class="flex flex-col flex-1 border-grid" data-wrapper="">
+     <header class="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60">
+      <div class="container-wrapper">
+       <div class="container flex h-13 items-center">
+        <div class="mr-4 hidden md:flex">
+         <a class="mr-6 flex items-center gap-2.5" href="/">
+          <svg class="h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+           <path d="M13 5H19V11">
+           </path>
+           <path d="M19 5L5 19">
+           </path>
+          </svg>
+          <span class="hidden font-semibold tracking-tight lg:inline-block">
+           aadi.is-dev
+          </span>
+         </a>
+         <nav class="flex items-center gap-6 text-sm">
+          <a class="transition-colors hover:text-foreground font-medium text-foreground" href="/">
+           Home
+          </a>
+          <a class="group flex items-center gap-1.5 text-muted-foreground transition-colors hover:text-foreground" href="https://www.linkedin.com/in/adityadomle/" target="_blank">
+           LinkedIn
+           <svg class="lucide lucide-external-link h-3 w-3 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 3h6v6">
+            </path>
+            <path d="M10 14 21 3">
+            </path>
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+            </path>
+           </svg>
+          </a>
+          <a class="group flex items-center gap-1.5 text-muted-foreground transition-colors hover:text-foreground" href="https://drive.google.com/file/d/your-resume-id/view" target="_blank">
+           Resume
+           <svg class="lucide lucide-external-link h-3 w-3 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 3h6v6">
+            </path>
+            <path d="M10 14 21 3">
+            </path>
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+            </path>
+           </svg>
+          </a>
+         </nav>
+        </div>
+        <button aria-controls="radix-_R_9cdb_" aria-expanded="false" aria-haspopup="dialog" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 size-9 h-9 w-9 rounded-full transition-all hover:scale-105 hover:bg-muted md:hidden" data-slot="drawer-trigger" data-state="closed" type="button">
+         <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.75 9h16.5m-16.5 6.75h16.5" stroke-linecap="round" stroke-linejoin="round">
+          </path>
+         </svg>
+        </button>
+        <h2 class="text-foreground font-semibold sr-only" data-slot="drawer-title" id="radix-_R_9cdbH1_">
+         Navigation Menu
+        </h2>
+        <div class="ml-auto flex items-center gap-2 md:gap-3">
+         <div class="hidden md:block">
+          <button class="inline-flex items-center gap-2 whitespace-nowrap transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 px-4 py-2 has-[&gt;svg]:px-3 relative h-8 w-full justify-start rounded-[0.5rem] bg-muted/50 text-sm font-normal text-muted-foreground shadow-none sm:pr-12 md:w-40 lg:w-56 xl:w-64" data-slot="button">
+           <span class="hidden lg:inline-flex">
+            Search sections...
+           </span>
+           <span class="inline-flex lg:hidden">
+            Search...
+           </span>
+           <kbd class="pointer-events-none absolute right-[0.3rem] top-[0.3rem] hidden h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex">
+            <span class="text-xs">
+             ⌘
+            </span>
+            K
+           </kbd>
+          </button>
+          <div class="flex flex-col gap-2 text-center sm:text-left sr-only" data-slot="dialog-header">
+           <h2 class="text-lg leading-none font-semibold" data-slot="dialog-title" id="radix-_R_4tcdbH1_">
+            Command Palette
+           </h2>
+           <p class="text-muted-foreground text-sm" data-slot="dialog-description" id="radix-_R_4tcdbH2_">
+            Search for a command to run...
+           </p>
+          </div>
+         </div>
+         <div class="hidden items-center gap-2 rounded-full border border-border/40 bg-muted/30 px-3 py-1.5 backdrop-blur-sm lg:flex">
+          <div class="relative flex h-2 w-2">
+           <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75">
+           </span>
+           <span class="relative inline-flex h-2 w-2 rounded-full bg-green-500">
+           </span>
+          </div>
+          <span class="text-xs font-medium tabular-nums tracking-tight text-foreground">
+           10:42:44
+          </span>
+         </div>
+         <div class="flex items-center gap-1">
+          <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 size-9 h-9 w-9 rounded-full transition-all hover:scale-105 hover:bg-muted" data-slot="button" title="Play Music">
+           <svg class="h-[18px] w-[18px] transition-colors text-muted-foreground" fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18V5l12-2v13">
+            </path>
+            <circle cx="6" cy="18" r="3">
+            </circle>
+            <circle cx="18" cy="16" r="3">
+            </circle>
+           </svg>
+          </button>
+          <div class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 size-9 h-9 w-9 rounded-full transition-all hover:scale-105 hover:bg-muted" data-slot="button">
+           <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 py-2 has-[&gt;svg]:px-3 w-8 h-8 px-0 group/toggle" data-slot="button">
+            <svg class="lucide lucide-sun hidden [html.dark_&amp;]:block h-[18px] w-[18px]" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+             <circle cx="12" cy="12" r="4">
+             </circle>
+             <path d="M12 2v2">
+             </path>
+             <path d="M12 20v2">
+             </path>
+             <path d="m4.93 4.93 1.41 1.41">
+             </path>
+             <path d="m17.66 17.66 1.41 1.41">
+             </path>
+             <path d="M2 12h2">
+             </path>
+             <path d="M20 12h2">
+             </path>
+             <path d="m6.34 17.66-1.41 1.41">
+             </path>
+             <path d="m19.07 4.93-1.41 1.41">
+             </path>
+            </svg>
+            <svg class="lucide lucide-moon hidden [html.light_&amp;]:block h-[18px] w-[18px]" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+             <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z">
+             </path>
+            </svg>
+            <span class="sr-only">
+             Toggle theme
+            </span>
+           </button>
+          </div>
+          <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 size-9 h-9 w-9 rounded-full transition-all hover:scale-105 hover:bg-muted" data-slot="button" href="https://github.com/adityadomle" rel="noreferrer" target="_blank">
+           <svg class="h-[18px] w-[18px]" viewbox="0 0 438.549 438.549">
+            <path d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z" fill="currentColor">
+            </path>
+           </svg>
+           <span class="sr-only">
+            GitHub
+           </span>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <audio loop="" preload="auto" src="/music/theme.mp3">
+      </audio>
+     </header>
+     <main class="flex flex-col flex-1">
+      <div class="container-wrapper">
+       <div class="container flex-1 items-start md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10">
+        <aside class="border-grid fixed top-14 z-30 hidden h-[calc(100vh-3.5rem)] w-full shrink-0 border-r md:sticky md:block">
+         <div class="h-full py-6 pr-4 overflow-auto no-scrollbar lg:py-8">
+          <div class="flex flex-col gap-6">
+           <div class="flex flex-col gap-1">
+            <h4 class="rounded-md px-2 py-1 text-sm font-medium">
+             Sections
+             <!-- -->
+            </h4>
+            <div class="grid grid-flow-row auto-rows-max gap-0.5 text-sm">
+             <a class="group relative flex h-8 w-full items-center rounded-lg px-2 after:absolute after:inset-x-0 after:inset-y-[-2px] after:rounded-lg hover:bg-accent hover:text-accent-foreground bg-accent font-medium text-accent-foreground" href="/" rel="" target="">
+              Introduction
+             </a>
+             <a class="group relative flex h-8 w-full items-center rounded-lg px-2 after:absolute after:inset-x-0 after:inset-y-[-2px] after:rounded-lg hover:bg-accent hover:text-accent-foreground font-normal text-foreground" href="/about" rel="" target="">
+              About Me
+             </a>
+             <a class="group relative flex h-8 w-full items-center rounded-lg px-2 after:absolute after:inset-x-0 after:inset-y-[-2px] after:rounded-lg hover:bg-accent hover:text-accent-foreground font-normal text-foreground" href="/projects" rel="" target="">
+              Projects
+             </a>
+             <a class="group relative flex h-8 w-full items-center rounded-lg px-2 after:absolute after:inset-x-0 after:inset-y-[-2px] after:rounded-lg hover:bg-accent hover:text-accent-foreground font-normal text-foreground" href="/skills-tools" rel="" target="">
+              Skills &amp; Tools
+             </a>
+             <a class="group relative flex h-8 w-full items-center rounded-lg px-2 after:absolute after:inset-x-0 after:inset-y-[-2px] after:rounded-lg hover:bg-accent hover:text-accent-foreground font-normal text-foreground" href="/experience" rel="" target="">
+              Experience
+             </a>
+             <a class="group relative flex h-8 w-full items-center rounded-lg px-2 after:absolute after:inset-x-0 after:inset-y-[-2px] after:rounded-lg hover:bg-accent hover:text-accent-foreground font-normal text-foreground" href="/education" rel="" target="">
+              Education
+             </a>
+             <a class="group relative flex h-8 w-full items-center rounded-lg px-2 after:absolute after:inset-x-0 after:inset-y-[-2px] after:rounded-lg hover:bg-accent hover:text-accent-foreground font-normal text-foreground" href="/contact" rel="" target="">
+              Contact
+             </a>
+             <a class="group relative flex h-8 w-full items-center rounded-lg px-2 after:absolute after:inset-x-0 after:inset-y-[-2px] after:rounded-lg hover:bg-accent hover:text-accent-foreground font-normal text-foreground" href="/stats" rel="" target="">
+              Stats
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+        </aside>
+        <div class="flex flex-col flex-1 py-6 pr-4 lg:py-8">
+         <!--$?-->
+         <template id="B:0">
+         </template>
+         <section class="">
+          <div class="">
+           <div class="flex flex-col items-start gap-1 py-0">
+            <h1 class="text-2xl font-bold leading-tight tracking-tighter sm:text-3xl md:text-4xl lg:leading-[1.1]">
+             Loading...
+            </h1>
+            <p class="w-full text-left text-base font-light text-foreground sm:text-lg">
+             Getting data from various sources...
+            </p>
+           </div>
+          </div>
+         </section>
+         <div class="flex flex-col items-center justify-center mt-12 gap-6">
+          <svg class="lucide lucide-loader-circle w-10 h-10 animate-spin" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+           <path d="M21 12a9 9 0 1 1-6.219-8.56">
+           </path>
+          </svg>
+          <p class="text-sm text-muted-foreground">
+           This may take a few seconds...
+          </p>
+         </div>
+         <!--/$-->
+        </div>
+       </div>
+      </div>
+     </main>
+     <footer class="py-2 border-t border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div class="container-wrapper">
+       <div class="container flex flex-col items-center justify-center py-4 space-y-2">
+        <div class="max-w-3xl text-xs leading-relaxed text-center sm:text-sm text-balance text-muted-foreground">
+         <span class="block sm:inline">
+          ©2026
+         </span>
+         <span class="hidden sm:inline">
+          ·
+         </span>
+         <span class="block sm:inline">
+          Built with
+          <!-- -->
+          <span class="font-medium text-foreground">
+           Next.js
+          </span>
+          ,
+          <!-- -->
+          <span class="font-medium text-foreground">
+           shadcn/ui
+          </span>
+          and
+          <!-- -->
+          <span class="font-medium text-foreground">
+           Tailwind CSS
+          </span>
+         </span>
+         <span class="hidden sm:inline">
+          ·
+         </span>
+         <span class="block sm:inline">
+          Coded in
+          <!-- -->
+          <span class="font-medium text-foreground">
+           Cursor
+          </span>
+          and deployed with
+          <!-- -->
+          <span class="font-medium text-foreground">
+           Vercel
+          </span>
+         </span>
+        </div>
+        <div class="text-xs text-center sm:text-sm text-muted-foreground">
+         Developed by
+         <!-- -->
+         <a class="font-medium transition-colors text-primary hover:text-primary/80" href="https://github.com/adityadomle" rel="noreferrer" target="_blank">
+          Aditya Domle
+         </a>
+         <!-- -->
+         · Source code available on
+         <!-- -->
+         <a class="font-medium transition-colors text-primary hover:text-primary/80" href="https://topmate.io/aditya_domle/1773422" rel="noreferrer" target="_blank">
+          Topmate
+         </a>
+        </div>
+       </div>
+      </div>
+     </footer>
+    </div>
+   </div>
+  </div>
+  <section aria-atomic="false" aria-label="Notifications alt+T" aria-live="polite" aria-relevant="additions text" tabindex="-1">
+  </section>
+  <!--$!-->
+  <template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING">
+  </template>
+  <!--/$-->
+  <!--$!-->
+  <template data-dgst="BAILOUT_TO_CLIENT_SIDE_RENDERING">
+  </template>
+  <!--/$-->
+  <script>
+   requestAnimationFrame(function(){$RT=performance.now()});
+  </script>
+  <script async="" id="_R_" src="/_next/static/chunks/webpack-69a2bdad1afb6772.js">
+  </script>
+  <div hidden="" id="S:0">
+   <section class="">
+    <div class="">
+     <div class="flex flex-col items-start gap-1 py-0">
+      <h1 class="text-2xl font-bold leading-tight tracking-tighter sm:text-3xl md:text-4xl lg:leading-[1.1]">
+       Aditya Domle
+      </h1>
+      <h1 class="text-2xl font-bold leading-tight tracking-tighter sm:text-3xl md:text-4xl lg:leading-[1.1] mt-2 text-muted-foreground">
+       A coder by day, problem-solver by night!
+      </h1>
+      <p class="w-full text-left text-base font-light text-foreground sm:text-lg">
+       I am a dedicated Software Engineer specializing in full-stack application development. I enjoy crafting responsive web solutions using modern technologies like Next.js, React, Tailwind CSS, Node.js, Express, and MongoDB, while also applying DevOps practices, continuously aiming to deliver high-quality, comprehensive, user-centric software solutions.
+      </p>
+      <div class="flex w-full items-center justify-start gap-2 my-4 pt-2">
+       <a class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-8 gap-1.5 px-3 has-[&gt;svg]:px-2.5 rounded-md" data-slot="button" href="https://drive.google.com/file/d/your-resume-id/view" target="_blank">
+        Get Resume
+        <svg class="lucide lucide-external-link size-3" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M15 3h6v6">
+         </path>
+         <path d="M10 14 21 3">
+         </path>
+         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+         </path>
+        </svg>
+       </a>
+       <a class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-8 gap-1.5 px-3 has-[&gt;svg]:px-2.5 rounded-md" data-slot="button" href="mailto:adityadomle14@gmail.com">
+        <svg class="lucide lucide-mail size-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+         <rect height="16" rx="2" width="20" x="2" y="4">
+         </rect>
+         <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7">
+         </path>
+        </svg>
+        Send Mail
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+   <div class="flex flex-row items-center justify-between w-full mt-8">
+    <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[&gt;svg]:px-3 ml-auto" data-slot="button" href="/about">
+     About Me
+     <svg class="lucide lucide-chevron-right" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+      <path d="m9 18 6-6-6-6">
+      </path>
+     </svg>
+    </a>
+   </div>
+   <!--$-->
+   <!--/$-->
+  </div>
+  <script>
+   $RB=[];$RV=function(a){$RT=performance.now();for(var b=0;b<a.length;b+=2){var c=a[b],e=a[b+1];null!==e.parentNode&&e.parentNode.removeChild(e);var f=c.parentNode;if(f){var g=c.previousSibling,h=0;do{if(c&&8===c.nodeType){var d=c.data;if("/$"===d||"/&"===d)if(0===h)break;else h--;else"$"!==d&&"$?"!==d&&"$~"!==d&&"$!"!==d&&"&"!==d||h++}d=c.nextSibling;f.removeChild(c);c=d}while(c);for(;e.firstChild;)f.insertBefore(e.firstChild,c);g.data="$";g._reactRetry&&requestAnimationFrame(g._reactRetry)}}a.length=0};
+$RC=function(a,b){if(b=document.getElementById(b))(a=document.getElementById(a))?(a.previousSibling.data="$~",$RB.push(a,b),2===$RB.length&&("number"!==typeof $RT?requestAnimationFrame($RV.bind(null,$RB)):(a=performance.now(),setTimeout($RV.bind(null,$RB),2300>a&&2E3<a?2300-a:$RT+300-a)))):b.parentNode.removeChild(b)};$RC("B:0","S:0")
+  </script>
+  <script>
+   (self.__next_f=self.__next_f||[]).push([0])
+  </script>
+  <script>
+   self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[81901,[\"844\",\"static/chunks/ee560e2c-ca3f1191368ea17e.js\",\"619\",\"static/chunks/619-f072ac750404f9da.js\",\"900\",\"static/chunks/900-f40c24c2fbbdab7f.js\",\"241\",\"static/chunks/241-08d191a76bbfc83a.js\",\"103\",\"static/chunks/103-146618c684a97b71.js\",\"177\",\"static/chunks/app/layout-02e222bf6c26832c.js\"],\"ThemeProvider\"]\n3:I[36150,[\"844\",\"static/chunks/ee560e2c-ca3f1191368ea17e.js\",\"619\",\"static/chunks/619-f072ac750404f9da.js\",\"900\",\"static/chunks/900-f40c24c2fbbdab7f.js\",\"241\",\"static/chunks/241-08d191a76bbfc83a.js\",\"103\",\"static/chunks/103-146618c684a97b71.js\",\"177\",\"static/chunks/app/layout-02e222bf6c26832c.js\"],\"LenisProvider\"]\n4:I[61253,[\"844\",\"static/chunks/ee560e2c-ca3f1191368ea17e.js\",\"619\",\"static/chunks/619-f072ac750404f9da.js\",\"900\",\"static/chunks/900-f40c24c2fbbdab7f.js\",\"241\",\"static/chunks/241-08d191a76bbfc83a.js\",\"103\",\"static/chunks/103-146618c684a97b71.js\",\"177\",\"static/chunks/app/layout-02e222bf6c26832c.js\"],\"SiteHeader\"]\n5:I[53055,[\"844\",\"static/chunks/ee560e2c-ca3f1191368ea17e.js\",\"619\",\"static/chunks/619-f072ac750404f9da.js\",\"900\",\"static/chunks/900-f40c24c2fbbdab7f.js\",\"241\",\"static/chunks/241-08d191a76bbfc83a.js\",\"103\",\"static/chunks/103-146618c684a97b71.js\",\"177\",\"static/chunks/app/layout-02e222bf6c26832c.js\"],\"SideNav\"]\n6:I[9766,[],\"\"]\n7:I[98924,[],\"\"]\n9:I[70240,[\"844\",\"static/chunks/ee560e2c-ca3f1191368ea17e.js\",\"619\",\"static/chunks/619-f072ac750404f9da.js\",\"900\",\"static/chunks/900-f40c24c2fbbdab7f.js\",\"241\",\"static/chunks/241-08d191a76bbfc83a.js\",\"103\",\"static/chunks/103-146618c684a97b71.js\",\"177\",\"static/chunks/app/layout-02e222bf6c26832c.js\"],\"Toaster\"]\na:I[68332,[\"844\",\"static/chunks/ee560e2c-ca3f1191368ea17e.js\",\"619\",\"static/chunks/619-f072ac750404f9da.js\",\"900\",\"static/chunks/900-f40c24c2fbbdab7f.js\",\"241\",\"static/chunks/241-08d191a76bbfc83a.js\",\"103\",\"static/chunks/103-146618c684a97b71.js\",\"177\",\"static/chunks/app/layout-02e222bf6c26832c.js\"],\"GoogleAnalytics\"]\nb:I[68955,[\"844\",\"static/chunks/ee560e2c-ca3f1191368ea17e.js\",\"619\",\"static/chunks/619-f072ac750404f9da.j"])
+  </script>
+  <script>
+   self.__next_f.push([1,"s\",\"900\",\"static/chunks/900-f40c24c2fbbdab7f.js\",\"241\",\"static/chunks/241-08d191a76bbfc83a.js\",\"103\",\"static/chunks/103-146618c684a97b71.js\",\"177\",\"static/chunks/app/layout-02e222bf6c26832c.js\"],\"Analytics\"]\nc:I[48854,[\"844\",\"static/chunks/ee560e2c-ca3f1191368ea17e.js\",\"619\",\"static/chunks/619-f072ac750404f9da.js\",\"900\",\"static/chunks/900-f40c24c2fbbdab7f.js\",\"241\",\"static/chunks/241-08d191a76bbfc83a.js\",\"103\",\"static/chunks/103-146618c684a97b71.js\",\"177\",\"static/chunks/app/layout-02e222bf6c26832c.js\"],\"SpeedInsights\"]\ne:I[24431,[],\"OutletBoundary\"]\n10:I[15278,[],\"AsyncMetadataOutlet\"]\n12:I[24431,[],\"ViewportBoundary\"]\n14:I[24431,[],\"MetadataBoundary\"]\n15:\"$Sreact.suspense\"\n17:I[57150,[],\"\"]\n:HL[\"/_next/static/media/4cf2300e9c8272f7-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/93f479601ee12b01-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/css/d5ffb3a6e1b87a68.css\",\"style\"]\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,"0:{\"P\":null,\"b\":\"PWjoYAXu8g8doPwdXmDxv\",\"p\":\"\",\"c\":[\"\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/d5ffb3a6e1b87a68.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"suppressHydrationWarning\":true,\"children\":[[\"$\",\"head\",null,{\"children\":[\"$\",\"script\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"\\n              try {\\n                if (localStorage.theme === 'dark' || ((!('theme' in localStorage) || localStorage.theme === 'system') \u0026\u0026 window.matchMedia('(prefers-color-scheme: dark)').matches)) {\\n                  document.querySelector('meta[name=\\\"theme-color\\\"]').setAttribute('content', '#09090b')\\n                }\\n              } catch (_) {}\\n            \"}}]}],[\"$\",\"body\",null,{\"className\":\"min-h-svh bg-background font-sans antialiased __variable_188709 __variable_9a8899\",\"children\":[[\"$\",\"$L2\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"disableTransitionOnChange\":true,\"enableColorScheme\":true,\"children\":[\"$\",\"$L3\",null,{\"children\":[\"$\",\"div\",null,{\"vaul-drawer-wrapper\":\"\",\"children\":[\"$\",\"div\",null,{\"className\":\"relative flex flex-col min-h-svh bg-background\",\"children\":[\"$\",\"div\",null,{\"data-wrapper\":\"\",\"className\":\"flex flex-col flex-1 border-grid\",\"children\":[[\"$\",\"$L4\",null,{}],[\"$\",\"main\",null,{\"className\":\"flex flex-col flex-1\",\"children\":[\"$\",\"div\",null,{\"className\":\"container-wrapper\",\"children\":[\"$\",\"div\",null,{\"className\":\"container flex-1 items-start md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10\",\"children\":[[\"$\",\"aside\",null,{\"className\":\"border-grid fixed top-14 z-30 hidden h-[calc(100vh-3.5rem)] w-full shrink-0 border-r md:sticky md:block\",\"children\":[\"$\",\"div\",null,{\"className\":\"h-full py-6 pr-4 overflow-auto no-scrollbar lg:py-8\",\"children\":[\"$\",\"$L5\",null,{\"config\":{\"mainNav\":[{\"title\":\"Home\",\"href\":\"/\"}],\"sidebarNav\":[{\"title\":\"Sections\",\"items\":[{\"title\":\"Introduction\",\"href\":\"/\",\"items\":[]},{\"title\":\"About Me\",\"href\":\"/about\",\"items\":[]},{\"title\":\"Projects\",\"href\":\"/projects\",\"items\":[]},{\"title\":\"Skills \u0026 Tools\",\"href\":\"/skills-tools\",\"items\":[]},{\"title\":\"Experience\",\"href\":\"/experience\",\"items\":[]},{\"title\":\"Education\",\"href\":\"/education\",\"items\":[]},{\"title\":\"Contact\",\"href\":\"/contact\",\"items\":[]},{\"title\":\"Stats\",\"href\":\"/stats\",\"items\":[]}]}]}}]}]}],[\"$\",\"div\",null,{\"className\":\"flex flex-col flex-1 py-6 pr-4 lg:py-8\",\"children\":[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"div\",null,{\"children\":\"NotFound\"}],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]]}]}]}],\"$L8\"]}]}]}]}]}],[\"$\",\"$L9\",null,{\"richColors\":true,\"position\":\"top-center\"}],[\"$\",\"$La\",null,{\"gaId\":\"G-QREG3L1ZJF\"}],[\"$\",\"$Lb\",null,{}],[\"$\",\"$Lc\",null,{}]]}]]}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[\"$Ld\",null,[\"$\",\"$Le\",null,{\"children\":[\"$Lf\",[\"$\",\"$L10\",null,{\"promise\":\"$@11\"}]]}]]}],{},null,false]},[[\"$\",\"$1\",\"l\",{\"children\":[[\"$\",\"section\",null,{\"className\":\"\",\"children\":[\"$\",\"div\",null,{\"className\":\"\",\"children\":[\"$\",\"div\",null,{\"className\":\"flex flex-col items-start gap-1 py-0\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-2xl font-bold leading-tight tracking-tighter sm:text-3xl md:text-4xl lg:leading-[1.1]\",\"children\":\"Loading...\"}],[\"$\",\"p\",null,{\"className\":\"w-full text-left text-base font-light text-foreground sm:text-lg\",\"children\":\"Getting data from various sources...\"}]]}]}]}],[\"$\",\"div\",null,{\"className\":\"flex flex-col items-center justify-center mt-12 gap-6\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-loader-circle w-10 h-10 animate-spin\",\"children\":[[\"$\",\"path\",\"13zald\",{\"d\":\"M21 12a9 9 0 1 1-6.219-8.56\"}],\"$undefined\"]}],[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground\",\"children\":\"This may take a few seconds...\"}]]}]]}],[],[]],false],[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L12\",null,{\"children\":\"$L13\"}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]],[\"$\",\"$L14\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$15\",null,{\"fallback\":null,\"children\":\"$L16\"}]}]}]]}],false]],\"m\":\"$undefined\",\"G\":[\"$17\",[]],\"s\":false,\"S\":true}\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,"18:I[52619,[\"619\",\"static/chunks/619-f072ac750404f9da.js\",\"900\",\"static/chunks/900-f40c24c2fbbdab7f.js\",\"974\",\"static/chunks/app/page-081fd04277ce1343.js\"],\"\"]\n19:I[98751,[\"619\",\"static/chunks/619-f072ac750404f9da.js\",\"900\",\"static/chunks/900-f40c24c2fbbdab7f.js\",\"974\",\"static/chunks/app/page-081fd04277ce1343.js\"],\"default\"]\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,"8:[\"$\",\"footer\",null,{\"className\":\"py-2 border-t border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60\",\"children\":[\"$\",\"div\",null,{\"className\":\"container-wrapper\",\"children\":[\"$\",\"div\",null,{\"className\":\"container flex flex-col items-center justify-center py-4 space-y-2\",\"children\":[[\"$\",\"div\",null,{\"className\":\"max-w-3xl text-xs leading-relaxed text-center sm:text-sm text-balance text-muted-foreground\",\"children\":[[\"$\",\"span\",null,{\"className\":\"block sm:inline\",\"children\":\"©2026\"}],[\"$\",\"span\",null,{\"className\":\"hidden sm:inline\",\"children\":\" · \"}],[\"$\",\"span\",null,{\"className\":\"block sm:inline\",\"children\":[\"Built with\",\" \",[\"$\",\"span\",null,{\"className\":\"font-medium text-foreground\",\"children\":\"Next.js\"}],\",\",\" \",[\"$\",\"span\",null,{\"className\":\"font-medium text-foreground\",\"children\":\"shadcn/ui\"}],\" and\",\" \",[\"$\",\"span\",null,{\"className\":\"font-medium text-foreground\",\"children\":\"Tailwind CSS\"}]]}],[\"$\",\"span\",null,{\"className\":\"hidden sm:inline\",\"children\":\" · \"}],[\"$\",\"span\",null,{\"className\":\"block sm:inline\",\"children\":[\"Coded in\",\" \",[\"$\",\"span\",null,{\"className\":\"font-medium text-foreground\",\"children\":\"Cursor\"}],\" and deployed with\",\" \",[\"$\",\"span\",null,{\"className\":\"font-medium text-foreground\",\"children\":\"Vercel\"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"text-xs text-center sm:text-sm text-muted-foreground\",\"children\":[\"Developed by\",\" \",[\"$\",\"$L18\",null,{\"href\":\"https://github.com/adityadomle\",\"target\":\"_blank\",\"rel\":\"noreferrer\",\"className\":\"font-medium transition-colors text-primary hover:text-primary/80\",\"children\":\"Aditya Domle\"}],\" \",\"· Source code available on\",\" \",[\"$\",\"$L18\",null,{\"href\":\"https://topmate.io/aditya_domle/1773422\",\"target\":\"_blank\",\"rel\":\"noreferrer\",\"className\":\"font-medium transition-colors text-primary hover:text-primary/80\",\"children\":\"Topmate\"}]]}]]}]}]}]\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,"d:[[\"$\",\"section\",null,{\"className\":\"\",\"children\":[\"$\",\"div\",null,{\"className\":\"\",\"children\":[\"$\",\"div\",null,{\"className\":\"flex flex-col items-start gap-1 py-0\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-2xl font-bold leading-tight tracking-tighter sm:text-3xl md:text-4xl lg:leading-[1.1]\",\"children\":\"Aditya Domle\"}],[\"$\",\"h1\",null,{\"className\":\"text-2xl font-bold leading-tight tracking-tighter sm:text-3xl md:text-4xl lg:leading-[1.1] mt-2 text-muted-foreground\",\"children\":\"A coder by day, problem-solver by night!\"}],[\"$\",\"p\",null,{\"className\":\"w-full text-left text-base font-light text-foreground sm:text-lg\",\"children\":\"I am a dedicated Software Engineer specializing in full-stack application development. I enjoy crafting responsive web solutions using modern technologies like Next.js, React, Tailwind CSS, Node.js, Express, and MongoDB, while also applying DevOps practices, continuously aiming to deliver high-quality, comprehensive, user-centric software solutions.\"}],[\"$\",\"div\",null,{\"className\":\"flex w-full items-center justify-start gap-2 my-4 pt-2\",\"children\":[[\"$\",\"$L18\",null,{\"href\":\"https://drive.google.com/file/d/your-resume-id/view\",\"target\":\"_blank\",\"children\":[\"Get Resume\",[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-external-link size-3\",\"children\":[[\"$\",\"path\",\"1q9fwt\",{\"d\":\"M15 3h6v6\"}],[\"$\",\"path\",\"gplh6r\",{\"d\":\"M10 14 21 3\"}],[\"$\",\"path\",\"a6xqqp\",{\"d\":\"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6\"}],\"$undefined\"]}]],\"data-slot\":\"button\",\"className\":\"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [\u0026_svg]:pointer-events-none [\u0026_svg:not([class*='size-'])]:size-4 shrink-0 [\u0026_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-8 gap-1.5 px-3 has-[\u003esvg]:px-2.5 rounded-md\",\"ref\":null}],[\"$\",\"$L18\",null,{\"href\":\"mailto:adityadomle14@gmail.com\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-mail size-4\",\"children\":[[\"$\",\"rect\",\"18n3k1\",{\"width\":\"20\",\"height\":\"16\",\"x\":\"2\",\"y\":\"4\",\"rx\":\"2\"}],[\"$\",\"path\",\"1ocrg3\",{\"d\":\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"}],\"$undefined\"]}],\"Send Mail\"],\"data-slot\":\"button\",\"className\":\"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [\u0026_svg]:pointer-events-none [\u0026_svg:not([class*='size-'])]:size-4 shrink-0 [\u0026_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-8 gap-1.5 px-3 has-[\u003esvg]:px-2.5 rounded-md\",\"ref\":null}]]}]]}]}]}],[\"$\",\"$L19\",null,{\"prevHref\":\"/\",\"nextHref\":\"/about\",\"prevTitle\":\"Previous\",\"nextTitle\":\"About Me\"}]]\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,"13:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"2\",{\"name\":\"theme-color\",\"content\":\"#ffffff\"}]]\nf:null\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,"1a:I[80622,[],\"IconMark\"]\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,"11:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"aadi.is-dev\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Portfolio of Aditya Domle, Full-Stack Web Developer \u0026 DevOps enthusiast.\"}],[\"$\",\"link\",\"2\",{\"rel\":\"author\",\"href\":\"https://imaditya.vercel.app\"}],[\"$\",\"meta\",\"3\",{\"name\":\"author\",\"content\":\"Aditya Domle\"}],[\"$\",\"meta\",\"4\",{\"name\":\"keywords\",\"content\":\"Aditya Domle,aditya domle,aditya.com,Aditya Domle Portfolio,Full Stack Developer,Web Developer,DevOps Engineer,Next.js Developer,React Developer,Node.js Developer,Aditya Domle Projects,Aditya Domle Skills,Aditya Domle Experience,Aditya Domle Education,Aditya Domle Contact,Aditya Domle Resume\"}],[\"$\",\"meta\",\"5\",{\"name\":\"creator\",\"content\":\"Aditya Domle\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:title\",\"content\":\"aadi.is-dev\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:description\",\"content\":\"Portfolio of Aditya Domle, Full-Stack Web Developer \u0026 DevOps enthusiast.\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:url\",\"content\":\"https://aadi.is-a.dev\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:site_name\",\"content\":\"aadi.is-dev\"}],[\"$\",\"meta\",\"10\",{\"property\":\"og:locale\",\"content\":\"en_US\"}],[\"$\",\"meta\",\"11\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"12\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"13\",{\"name\":\"twitter:creator\",\"content\":\"@env_aditya\"}],[\"$\",\"meta\",\"14\",{\"name\":\"twitter:title\",\"content\":\"aadi.is-dev\"}],[\"$\",\"meta\",\"15\",{\"name\":\"twitter:description\",\"content\":\"Portfolio of Aditya Domle, Full-Stack Web Developer \u0026 DevOps enthusiast.\"}],[\"$\",\"link\",\"16\",{\"rel\":\"shortcut icon\",\"href\":\"/favicon-16x16.png\"}],[\"$\",\"link\",\"17\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\"}],[\"$\",\"link\",\"18\",{\"rel\":\"apple-touch-icon\",\"href\":\"/apple-touch-icon.png\"}],[\"$\",\"$L1a\",\"19\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,"16:\"$11:metadata\"\n"])
+  </script>
+ </body>
+</html>
