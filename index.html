@@ -7,6 +7,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="header">
+  <div class="header-left">
+    <span class="logo">Minh Quan</span>
+    <nav class="top-nav">
+      <a href="https://www.linkedin.com/in/quantran22/" target="_blank">LinkedIn</a>
+      <a href="#">Resume</a>
+    </nav>
+  </div>
+  <div class="header-right">
+    <button id="dark-mode-toggle" class="toggle-btn">
+      <span class="mode-text">Dark Mode</span>
+    </button>
+  </div>
+</header>
   <div class="container">
     <!-- Sidebar -->
     <aside class="sidebar">
@@ -24,27 +38,40 @@
     <!-- Main content area -->
     <main class="main-content">
       <section id="introduction" class="section active">
-      <h1>Hello, I'm Minh Quan Tran</h1>
-      <p>
-        I am a Mechanical Engineer with a strong foundation in robotics, automation, and software integration. 
-        I bridge the gap between traditional mechanical design and intelligent systems, building tools that are efficient, 
-        data-driven, and forward-thinking. 
-      </p>
-      </section>
+    <h1 class="hero-title">Hello, I'm Minh Quan</h1>
+    <p class="hero-quote">An engineer by day, learner by night.</p>
+    <p class="hero-description">
+      I am a Graduate Mechanical Engineer from the University of Melbourne. 
+      Welcome to my personal website. While my foundation is built on the precision of mechanics, 
+      I find my true creative spark in the logic of code.
+    </p>
+    <a href="#" class="cta-button" data-section="about">About me ></a>
+  </section>
 
-      <section id="about" class="section">
-      <h1>About Me</h1>
+  <section id="about" class="section">
+    <h1 class="hero-title">About Minh Quan</h1>
+    <p class="hero-quote">More than just a title — let’s dive deeper!</p>
+    
+    <div class="about-text">
       <p>
-        As an engineering graduate, my expertise lies at the intersection of mechanical systems and modern programming. 
-        I thrive on solving complex problems, whether that involves designing hardware, writing code for autonomous systems, 
-        or deploying computational simulations. 
+        I am a mechanical engineer who thrives at the intersection of physical systems and intelligent software. 
+        My journey began with a fascination for how things move, which naturally evolved into a passion for 
+        Robotics and Autonomous Systems. I don't just want to design a machine; 
+        I want to give it the "brain" to navigate the world.
       </p>
       <p>
-        Beyond my core engineering work, I am passionate about collaborative learning. I actively run a study group focused on 
-        artificial intelligence, where we explore how machine learning can be applied to real-world physical systems. 
-        I am always eager to take on new challenges, learn emerging technologies, and push the boundaries of automation.
+        With a strong foundation in Computational Fluid Dynamics (CFD) and Reinforcement Learning, 
+        I focus on building systems that are as efficient as they are smart. Whether I'm 
+        optimizing internal flows in ANSYS or training an RL agent for autonomous navigation, 
+        my goal is to bridge the gap between traditional engineering and the future of automation.
       </p>
-    </section>
+      <p>
+        I believe the best solutions come from curiosity and collaboration. I aim to contribute to 
+        impactful projects that push the boundaries of what machines can do for us.
+      </p>
+    </div>
+    <a href="projects.html" class="cta-button">Projects ></a>
+  </section>
 
       <!-- Other sections like Projects, Skills, Experience, Education link to separate pages -->
       <section id="placeholder" class="section">
@@ -54,24 +81,11 @@
   </div>
 
   <script>
-    // Sidebar click handler for dynamic content
-    const links = document.querySelectorAll('.nav-links a[data-section]');
-    const sections = document.querySelectorAll('.section');
-
-    links.forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const target = link.dataset.section;
-
-        sections.forEach(sec => {
-          if (sec.id === target) {
-            sec.classList.add('active');
-          } else {
-            sec.classList.remove('active');
-          }
-        });
-      });
-    });
-  </script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".section").forEach(s => s.classList.remove("active"));
+    document.getElementById("projects").classList.add("active");
+  });
+</script>
+  <script src="script.js"></script>
 </body>
 </html>

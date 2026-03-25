@@ -239,3 +239,198 @@ body {
 .comparison-table tr:hover {
   background-color: #f3f4f6;
 }
+
+/* Top Bar Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.75rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.top-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #6b7280;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.top-nav a:hover {
+  color: #111827;
+}
+
+.toggle-btn {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+/* Dark Mode Variables & Class */
+body.dark-mode {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+.dark-mode .sidebar, 
+.dark-mode .header,
+.dark-mode .card,
+.dark-mode .project-card {
+  background-color: #1f2937;
+  border-color: #374151;
+  color: #f9fafb;
+}
+
+.dark-mode .nav-links a,
+.dark-mode .top-nav a,
+.dark-mode .card .description {
+  color: #9ca3af;
+}
+
+.dark-mode .nav-links a:hover,
+.dark-mode .top-nav a:hover,
+.dark-mode .logo {
+  color: #ffffff;
+}
+
+.dark-mode .toggle-btn {
+  background: #374151;
+  color: #ffffff;
+  border-color: #4b5563;
+}
+
+/* Dark Mode Colors */
+body.dark-mode {
+  background-color: #111827; /* Dark background */
+  color: #f9fafb;            /* Light text */
+}
+
+/* Adjust components for Dark Mode */
+.dark-mode .sidebar, 
+.dark-mode .header,
+.dark-mode .card,
+.dark-mode .project-card {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.dark-mode .nav-links a,
+.dark-mode .top-nav a,
+.dark-mode .description {
+  color: #9ca3af;
+}
+
+.dark-mode .nav-links a:hover,
+.dark-mode .top-nav a:hover {
+  color: #ffffff;
+}
+
+/* Update the toggle button appearance in dark mode */
+.dark-mode .toggle-btn {
+  background: #374151;
+  color: #ffffff;
+  border-color: #4b5563;
+}
+
+/* CTA Button Styling */
+.cta-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #111827; /* Dark gray/black */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+/* Hover Effect */
+.cta-button:hover {
+  background-color: #374151; /* Slightly lighter gray on hover */
+  transform: translateY(-2px);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
+
+/* Dark Mode Adjustment for Buttons */
+.dark-mode .cta-button {
+  background-color: #3b82f6; /* Blue in dark mode for better visibility */
+  color: #ffffff;
+}
+
+.dark-mode .cta-button:hover {
+  background-color: #2563eb;
+}
+/* Artistic Typography */
+.hero-title {
+  font-size: 3.5rem; /* Big, bold impact */
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+  color: #111827;
+}
+
+.hero-quote {
+  font-size: 1.5rem; /* Smaller than title, bigger than body */
+  font-weight: 500;
+  color: #4b5563;
+  font-style: italic;
+  margin-bottom: 2rem;
+  border-left: 3px solid #3b82f6; /* Artistic accent line */
+  padding-left: 1rem;
+}
+
+.hero-description, .about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8; /* Increased line height for readability */
+  max-width: 800px;
+  color: #374151;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+}
+
+/* Dark Mode Adjustments */
+.dark-mode .hero-title {
+  color: #ffffff;
+}
+
+.dark-mode .hero-quote {
+  color: #9ca3af;
+  border-left-color: #60a5fa;
+}
+
+.dark-mode .hero-description, 
+.dark-mode .about-text p {
+  color: #d1d5db;
+}
+
+/* Make bold text pop in dark mode */
+.dark-mode strong {
+  color: #60a5fa;
+}
