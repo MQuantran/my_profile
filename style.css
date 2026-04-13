@@ -476,6 +476,200 @@ body.dark-mode {
       color: #666;
     }
 
+/* ============================
+   MOBILE: Hamburger Button
+   ============================ */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #111827;
+  padding: 0.2rem 0.4rem;
+  line-height: 1;
+  border-radius: 0.25rem;
+  transition: background 0.2s;
+}
+
+.menu-btn:hover {
+  background: #f3f4f6;
+}
+
+.dark-mode .menu-btn {
+  color: #f9fafb;
+}
+
+.dark-mode .menu-btn:hover {
+  background: #374151;
+}
+
+/* Overlay behind open sidebar */
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 150;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* ============================
+   RESPONSIVE: ≤ 768px (mobile)
+   ============================ */
+@media (max-width: 768px) {
+
+  /* Show hamburger */
+  .menu-btn {
+    display: block;
+  }
+
+  /* Tighten header */
+  .header {
+    padding: 0.6rem 1rem;
+  }
+
+  .header-left {
+    gap: 1rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .top-nav {
+    gap: 0.75rem;
+  }
+
+  .top-nav a {
+    font-size: 0.8rem;
+  }
+
+  .toggle-btn {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.6rem;
+  }
+
+  /* Sidebar becomes off-canvas slide-in */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -240px;
+    width: 220px;
+    height: 100vh;
+    z-index: 200;
+    transition: left 0.28s ease;
+    padding-top: 4.5rem;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  /* Stack layout vertically */
+  .container {
+    flex-direction: column;
+  }
+
+  /* Main takes full width */
+  .main-content {
+    padding: 1.25rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Hero typography */
+  .hero-title {
+    font-size: 2.2rem;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-quote {
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-description,
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  /* Cards */
+  .card,
+  .project-card {
+    padding: 1.1rem;
+  }
+
+  /* Section nav: keep side-by-side but allow wrapping */
+  .section-nav {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .cta-button,
+  .cta-button-back {
+    font-size: 0.9rem;
+    padding: 0.65rem 1.1rem;
+  }
+
+  /* Short (vertical) video: full-width */
+  .short-video-wrapper {
+    width: 100%;
+    max-width: 315px;
+    height: 480px;
+  }
+
+  /* Landscape video iframe */
+  .video-container iframe {
+    height: 220px;
+  }
+
+  /* Comparison table: horizontal scroll */
+  .comparison-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Project images */
+  .project-img {
+    max-width: 100%;
+  }
+
+  /* Section headings */
+  .section h1,
+  .main-content section > h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ============================
+   RESPONSIVE: ≤ 480px (small phones)
+   ============================ */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-quote {
+    font-size: 1rem;
+  }
+
+  .top-nav {
+    display: none; /* hide LinkedIn/Resume links on very small screens — accessible via sidebar */
+  }
+
+  .cta-button,
+  .cta-button-back {
+    font-size: 0.85rem;
+    padding: 0.55rem 0.9rem;
+  }
+}
+
 /* Section Navigation (Back / Forward buttons) */
 .section-nav {
   display: flex;

@@ -1,3 +1,28 @@
+// ── HAMBURGER / SIDEBAR TOGGLE ──────────────────────────────────────────────
+const menuBtn = document.getElementById('menu-toggle');
+const sidebar = document.querySelector('.sidebar');
+const overlay = document.getElementById('overlay');
+
+function openSidebar() {
+    sidebar && sidebar.classList.add('open');
+    overlay && overlay.classList.add('active');
+    document.body.style.overflow = 'hidden'; // prevent background scroll
+}
+
+function closeSidebar() {
+    sidebar && sidebar.classList.remove('open');
+    overlay && overlay.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+if (menuBtn) menuBtn.addEventListener('click', openSidebar);
+if (overlay) overlay.addEventListener('click', closeSidebar);
+
+// Close sidebar when a nav link is clicked (mobile UX)
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', closeSidebar);
+});
+
 // 1. SELECT ELEMENTS
 const toggleBtn = document.getElementById('dark-mode-toggle');
 const body = document.body;
