@@ -2,7 +2,7 @@
 const toggleBtn = document.getElementById('dark-mode-toggle');
 const body = document.body;
 const navLinks = document.querySelectorAll('.nav-links a[data-section]');
-const ctaButtons = document.querySelectorAll('.cta-button[data-section]');
+const ctaButtons = document.querySelectorAll('.cta-button[data-section], .cta-button-back[data-section]');
 const sections = document.querySelectorAll('.section');
 
 // 2. DARK MODE "MEMORY" CHECK

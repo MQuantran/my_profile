@@ -45,7 +45,10 @@
       Welcome to my personal website. While my foundation is built on the precision of mechanics, 
       I find my true creative spark in the logic of code.
     </p>
-    <a href="#" class="cta-button" data-section="about">About me ></a>
+    <div class="section-nav">
+      <span></span>
+      <a href="#" class="cta-button" data-section="about">About Me ></a>
+    </div>
   </section>
 
   <section id="about" class="section">
@@ -70,7 +73,10 @@
         impactful projects that push the boundaries of what machines can do for us.
       </p>
     </div>
-    <a href="projects.html" class="cta-button">Projects ></a>
+    <div class="section-nav">
+      <a href="#" class="cta-button-back" data-section="introduction">< Introduction</a>
+      <a href="projects.html" class="cta-button">Projects ></a>
+    </div>
   </section>
 
       <!-- Other sections like Projects, Skills, Experience, Education link to separate pages -->
@@ -80,12 +86,7 @@
     </main>
   </div>
 
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".section").forEach(s => s.classList.remove("active"));
-    document.getElementById("projects").classList.add("active");
-  });
-</script>
+  
   <script src="script.js"></script>
 </body>
 </html>

@@ -98,17 +98,29 @@
         <div class="card-header">
           <h2>Core Engineering Modules</h2>
         </div>
-        
-        <h3>Lane Keeping & Curve Handling</h3>
-        <p>Designed a steering policy using a baseline PID controller to follow road centerlines estimated from cone positions.</p>
-        <img src="images/fig-1.png" alt="Robot in Environment" class="project-img">
-        <p class="img-caption">Figure 2: Representation of the Robot in its environment</p>
 
-        <h3>Cruise Control</h3>
-        <p>Developed an ESC control policy that maintains target velocity while dynamically slowing down during sharp curves to maintain traction.</p>
+        <h3>Lane Keeping & Curve Handling</h3>
+        <p>Designed a steering policy using a baseline PID controller to follow road centerlines estimated from cone positions.
+        Key improvements over a simple PID included:</p>
+        <ul>
+          <li><strong>DBSCAN Clustering:</strong> Replaced K-means with density-based clustering to accurately separate left and right lane cones, especially on curved sections where K-means struggled.</li>
+          <li><strong>PCA Lane Direction:</strong> Applied Principal Component Analysis to the detected cone point cloud to estimate road heading, adding a heading-error term to the steering command for smoother cornering.</li>
+          <li><strong>Adaptive Lane Geometry:</strong> Dynamically estimated road width per timestep so the controller could handle variable cone spacing without manual tuning.</li>
+          <li><strong>Residual RL:</strong> Wrapped a Reinforcement Learning agent around the PID baseline — the RL policy learns a residual correction ∆u on top of the PID output, improving smoothness without requiring end-to-end training from scratch.</li>
+        </ul>
+        <img src="images/fig-1.png" alt="Robot in Environment" class="project-img">
+        <p class="img-caption">Figure 1: Representation of the Robot in its environment</p>
+
+        <h3>Cruise Control <span style="font-size:0.85rem; font-weight:400; color:#6b7280;">(My primary contribution)</span></h3>
+        <p>Designed and implemented an ESC (Electronic Speed Controller) policy that maintains a target velocity while dynamically reducing speed through sharp curves to preserve traction and stability. Key design decisions:</p>
+        <ul>
+          <li><strong>Curvature-Aware Speed Reduction:</strong> The controller reads the estimated road curvature ahead and scales down the target velocity proportionally — sharper turns trigger earlier and deeper deceleration.</li>
+          <li><strong>Battery Compensation:</strong> Addressed a real-hardware challenge where dropping battery voltage causes the integral term to over-correct; the policy was tuned to remain stable across the full battery charge range.</li>
+          <li><strong>FSM Integration:</strong> The cruise controller operates as a state in the Finite State Machine — it hands off control authority to the evasive-maneuver or emergency-stop states when the object detection module raises an alert.</li>
+        </ul>
 
         <h3>Object Detection</h3>
-        <p>Implemented systems to identify track obstacles and execute reactive maneuvers or emergency stops to prevent collisions.</p>
+        <p>Implemented a vision pipeline to identify cones and obstacles on the track, triggering reactive evasive manoeuvres or emergency stops to prevent collisions.</p>
       </div>
 
       <div class="card">
@@ -119,12 +131,17 @@
           This project provided deep insights into the practical challenges of robotic control systems:
         </p>
         <ul>
-          <li><strong>Hardware Constraints:</strong> Addressed how battery voltage drops affect integral control and speed consistency.</li>
-          <li><strong>Hybrid Architectures:</strong> Gained experience combining traditional PID stability with adaptive Reinforcement Learning.</li>
-          <li><strong>System Integration:</strong> Learned how to harmonize individual modules into a reliable, state-driven autonomous system.</li>
+          <li><strong>Sim-to-Real Gap:</strong> Algorithms that worked perfectly in simulation (e.g., curvature-based feedforward steering) needed substantial re-tuning or validation on the real hardware due to sensor noise and uneven cone placement.</li>
+          <li><strong>Hardware Constraints:</strong> Battery voltage drop introduced non-linear behavior in the ESC, making it essential to design control policies that remain stable across the full discharge range.</li>
+          <li><strong>Algorithm Selection Matters:</strong> Switching from K-means to DBSCAN for cone clustering was a key insight — the geometry of lane boundaries simply doesn't fit spherical cluster assumptions, and choosing the right algorithm unlocked reliable cornering performance.</li>
+          <li><strong>Hybrid Architectures:</strong> The Residual RL approach (RL corrects a PID baseline rather than learning from scratch) was far more practical — it required less training data, converged faster, and kept the system interpretable.</li>
+          <li><strong>System Integration:</strong> Harmonizing independent sub-systems (lane keeping, cruise control, object detection) into a single state-driven FSM revealed subtle coupling effects that couldn't be caught by testing modules in isolation.</li>
         </ul>
       </div>
-      <a href="projects.html" class="cta-button">&lt; Projects</a>
+      <div class="section-nav">
+        <a href="projects.html" class="cta-button-back">&lt; Projects</a>
+        <a href="helium_recovery.html" class="cta-button">Helium Recovery &gt;</a>
+      </div>
     </main>
   </div>
 
