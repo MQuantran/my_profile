@@ -64,7 +64,7 @@
         </div>
         <p class="description">
           The robot uses an array of infrared (IR) reflectance sensors mounted on the underside of the chassis.
-          Each sensor emits IR light and measures the reflected intensity &mdash; dark surfaces (the line) reflect
+          Each sensor emits IR light and measures the reflected intensity - dark surfaces (the line) reflect
           less light than the surrounding white surface, providing a contrast signal.
         </p>
         <ul>
@@ -83,7 +83,7 @@
           lateral error between the robot and the line centre.
         </p>
         <ul>
-          <li><strong>Proportional (P):</strong> Generates steering correction proportional to the current offset &mdash; the further off-centre, the harder it steers back.</li>
+          <li><strong>Proportional (P):</strong> Generates steering correction proportional to the current offset - the further off-centre, the harder it steers back.</li>
           <li><strong>Integral (I):</strong> Accumulates past error to correct persistent drift, ensuring the robot converges to the line even with asymmetric friction or motor differences.</li>
           <li><strong>Derivative (D):</strong> Responds to the rate of change of error, damping oscillation and providing predictive correction before the robot overshoots.</li>
           <li><strong>Tuning:</strong> PID gains were iteratively tuned through systematic testing on tracks of increasing complexity, balancing responsiveness against stability at higher speeds.</li>
@@ -110,9 +110,9 @@
         </div>
         <ul>
           <li><strong>Control Theory in Practice:</strong> Translating PID equations from theory to a physical system revealed the importance of sampling rate, sensor noise, and actuator latency.</li>
-          <li><strong>Tuning Trade-offs:</strong> Aggressive P gains improve tracking on curves but cause oscillation on straights &mdash; finding the balance required systematic experimentation.</li>
+          <li><strong>Tuning Trade-offs:</strong> Aggressive P gains improve tracking on curves but cause oscillation on straights - finding the balance required systematic experimentation.</li>
           <li><strong>Hardware Constraints:</strong> Battery voltage drop, motor dead-zones, and sensor mounting tolerances all required software compensation strategies.</li>
-          <li><strong>Iterative Design:</strong> Each test run informed mechanical and software refinements &mdash; sensor spacing, wheel alignment, and code structure evolved together.</li>
+          <li><strong>Iterative Design:</strong> Each test run informed mechanical and software refinements - sensor spacing, wheel alignment, and code structure evolved together.</li>
         </ul>
       </div>
 
