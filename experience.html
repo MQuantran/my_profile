@@ -46,6 +46,21 @@
         <h1>Professional Journey</h1>
         <p>You need experience to get the job, but the job’s what gives it! My journey blends technical engineering expertise with practical project delivery, problem-solving, and collaboration.</p>
 
+        <!-- Inverted Lambda -->
+        <div class="card">
+          <div class="card-header">
+            <span class="date">Apr 2026 – Present</span>
+            <h3>Robotics Software Engineer – Inverted Lambda</h3>
+          </div>
+          <p class="description">
+            Top-10 finalist at the Base Batches 003 × Virtuals Protocol Robotics Track Demo Day (Network School), demoing on humanoid hardware at Eastworld Labs in Kuala Lumpur.<br><br>
+            • Built the production teleoperation stack for a Unitree G1 EDU humanoid (29-DOF + Dex1-1 gripper) on Jetson Orin NX: four transport modes — USB-C DDS direct (~1 ms), WSS relay over Wi-Fi (~14 ms), Tailscale mesh, and worldwide Cloudflare Tunnel — driving a 3-camera live grid (RealSense D435i head + dual D405 wrists, H.264 NVENC WebRTC via go2rtc).<br>
+            • Shipped opt-in arm-velocity feedforward using Ruckig online trajectory generation, gated behind an env flag with four rollback layers; reduced encoder-noise amplification that had previously caused a hardware cracking incident, enabling a future safe Kd raise on the underdamped shoulder/elbow joints.<br>
+            • Contributed to the autonomy pipeline: YOLOv8n TensorRT detection (~7.8 ms) → FAST-LIO2 occupancy mapping → JPS / A* planner with pure-pursuit control → LLM skill orchestrator (34 skills, 12 safety rules, hybrid Claude / Ollama), all sitting under a three-layer safety stack (authoritative MCU 500 ms watchdog, ArmController 200 ms decay, DDS walk belt).<br>
+            • Authored a browser-based MuJoCo simulator from scratch (Vue 3 + TypeScript + Three.js + MuJoCo WASM): damped-least-squares IK with null-space projection for the Franka Panda and UFactory xArm7, plus a pre-trained 2-layer LSTM walking policy for the G1 — JWT-gated, points-scored, integrated with the platform CMS as the public demo lane.
+          </p>
+        </div>
+
         <!-- Industry capstone project -->
         <div class="card">
           <div class="card-header">
