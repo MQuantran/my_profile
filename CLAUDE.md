@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Static personal portfolio website for Minh Quan (mechanical/robotics engineer). No build tools, frameworks, or package manager — pure HTML, CSS, and vanilla JavaScript. Uses Google Fonts (Inter) via CDN.
+Static personal portfolio website for Minh Quan (mechanical/robotics engineer). No build tools, frameworks, or package manager - pure HTML, CSS, and vanilla JavaScript. Uses Google Fonts (Inter) via CDN.
 
 ## Architecture
 

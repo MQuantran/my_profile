@@ -1,10 +1,10 @@
 /* ============================================================
-   PORTFOLIO — Modern Redesign
+   PORTFOLIO - Modern Redesign
    ============================================================ */
 
 /* ── CSS VARIABLES ────────────────────────────────────────── */
 :root {
-  /* Colors — Light */
+  /* Colors - Light */
   --bg:            #f8fafc;
   --bg-card:       #ffffff;
   --bg-sidebar:    #ffffff;
@@ -738,7 +738,7 @@ li strong {
 }
 
 /* ============================================================
-   RESPONSIVE — TABLET (≤ 1024px)
+   RESPONSIVE - TABLET (≤ 1024px)
    ============================================================ */
 @media (max-width: 1024px) {
   .main-content {
@@ -748,7 +748,7 @@ li strong {
 }
 
 /* ============================================================
-   RESPONSIVE — MOBILE (≤ 768px)
+   RESPONSIVE - MOBILE (≤ 768px)
    ============================================================ */
 @media (max-width: 768px) {
 
@@ -891,7 +891,7 @@ li strong {
 }
 
 /* ============================================================
-   RESPONSIVE — SMALL PHONE (≤ 480px)
+   RESPONSIVE - SMALL PHONE (≤ 480px)
    ============================================================ */
 @media (max-width: 480px) {
   .hero-title {
